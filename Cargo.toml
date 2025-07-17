@@ -1,3 +1,8 @@
 [workspace]
 resolver = "3"
-members = ["policy-fetcher"]
+members = ["policy-fetcher", "burrego"]
+
+[workspace.dependencies]
+wasi-common = "34.0"
+wasmtime = "34.0"
+wasmtime-wasi = "34.0"
