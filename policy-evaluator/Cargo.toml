@@ -12,15 +12,15 @@ version = "0.27.2"
 
 [dependencies]
 anyhow = "1.0"
-base64 = "0.22"
+base64 = { workspace = true }
 burrego = { path = "../burrego" }
 cached = { version = "0.55", features = ["async_tokio_rt_multi_thread"] }
-chrono = { version = "0.4", default-features = false }
+chrono = { workspace = true, default-features = false }
 dns-lookup = "2.0"
 email_address = { version = "0.2", features = ["serde"] }
-futures = "0.3"
-itertools = "0.14"
-json-patch = "4.0"
+futures = { workspace = true }
+itertools = { workspace = true }
+json-patch = { workspace = true }
 k8s-openapi = { version = "0.25.0", default-features = false }
 kube = { version = "1.0.0", default-features = false, features = [
   "client",
@@ -28,7 +28,7 @@ kube = { version = "1.0.0", default-features = false, features = [
   "rustls-tls",
 ] }
 kubewarden-policy-sdk = { version = "0.14.2", features = ["crd"] }
-lazy_static = "1.5"
+lazy_static = { workspace = true }
 mail-parser = { version = "0.11", features = ["serde"] }
 picky = { version = "7.0.0-rc.8", default-features = false, features = [
   "chrono_conversion",
@@ -36,16 +36,19 @@ picky = { version = "7.0.0-rc.8", default-features = false, features = [
 ] }
 policy-fetcher = { git = "https://github.com/kubewarden/policy-fetcher", tag = "v0.10.4" }
 rhai = { version = "1.21", features = ["sync"] }
-semver = { version = "1.0", features = ["serde"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-serde_yaml = "0.9"
-sha2 = "0.10"
-thiserror = "2.0"
+semver = { workspace = true, features = ["serde"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+sha2 = { workspace = true }
+thiserror = { workspace = true }
 time = { version = "0.3", features = ["serde-human-readable"] }
-tokio = { version = "^1", features = ["rt", "rt-multi-thread"] }
-tracing = "0.1"
-url = { version = "2.5", features = ["serde"] }
+tokio = { workspace = true, default-features = true, features = [
+  "rt",
+  "rt-multi-thread",
+] }
+tracing = { workspace = true }
+url = { workspace = true, features = ["serde"] }
 validator = { version = "0.20", features = ["derive"] }
 wapc = "2.1"
 wasi-common = { workspace = true }
