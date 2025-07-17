@@ -3749,7 +3749,7 @@ dependencies = [
  "lazy_static",
  "mail-parser",
  "picky",
- "policy-fetcher 0.10.4 (git+https://github.com/kubewarden/policy-fetcher?tag=v0.10.4)",
+ "policy-fetcher",
  "reqwest",
  "rhai",
  "rstest",
@@ -3807,39 +3807,6 @@ dependencies = [
  "tempfile",
  "testcontainers",
  "textwrap",
- "thiserror 2.0.12",
- "tokio",
- "tracing",
- "url",
- "walkdir",
- "x509-parser",
-]
-
-[[package]]
-name = "policy-fetcher"
-version = "0.10.4"
-source = "git+https://github.com/kubewarden/policy-fetcher?tag=v0.10.4#4c0a9c3dface6064314034423660bbb4c1283948"
-dependencies = [
- "async-trait",
- "base64 0.22.1",
- "cfg-if",
- "directories",
- "docker_credential",
- "futures",
- "lazy_static",
- "oci-client",
- "path-slash",
- "rayon",
- "regex",
- "reqwest",
- "rustls",
- "rustls-pki-types",
- "serde",
- "serde_bytes",
- "serde_json",
- "serde_yaml",
- "sha2",
- "sigstore",
  "thiserror 2.0.12",
  "tokio",
  "tracing",

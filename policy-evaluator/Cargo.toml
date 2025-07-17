@@ -34,7 +34,7 @@ picky = { version = "7.0.0-rc.8", default-features = false, features = [
   "chrono_conversion",
   "x509",
 ] }
-policy-fetcher = { git = "https://github.com/kubewarden/policy-fetcher", tag = "v0.10.4" }
+policy-fetcher = { path = "../policy-fetcher/" }
 rhai = { version = "1.21", features = ["sync"] }
 semver = { workspace = true, features = ["serde"] }
 serde = { workspace = true, features = ["derive"] }
