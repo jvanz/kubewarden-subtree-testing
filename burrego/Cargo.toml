@@ -26,6 +26,6 @@ url = { workspace = true }
 wasmtime = { workspace = true }
 
 [dev-dependencies]
-anyhow = "1.0"
-assert-json-diff = "2.0.2"
+anyhow = { workspace = true }
+assert-json-diff = { workspace = true }
 clap = { version = "4.0", features = ["derive"] }

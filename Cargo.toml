@@ -4,25 +4,31 @@ members = ["policy-fetcher", "burrego", "policy-evaluator", "kwctl"]
 
 [workspace.dependencies]
 anyhow = "1.0"
+assert-json-diff = "2.0"
 base64 = "0.22"
 chrono = { version = "0.4", default-features = false }
 directories = "6.0"
 futures = "0.3"
+hyper = "1"
 itertools = "0.14"
 json-patch = "4.0"
 k8s-openapi = { version = "0.25.0", default-features = false }
 lazy_static = "1.5"
 regex = "1.5.6"
 reqwest = { version = "0", default-features = false }
-rustls-pki-types = "1"                                         # stick to the same version used by sigstore
+rstest = "0.25"
+rustls-pki-types = "1"                                          # stick to the same version used by sigstore
 semver = "1.0"
 serde = "1.0"
 serde_json = "1.0"
 serde_yaml = "0.9"
 sha2 = "0.10"
+tempfile = "3.19"
+testcontainers = { version = "0.24", default-features = false }
 thiserror = "2.0"
 time = "0.3.36"
 tokio = { version = "1", default-features = false }
+tower-test = "0.4"
 tracing = "0.1"
 tracing-subscriber = "0.3"
 url = "2.5"
