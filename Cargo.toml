@@ -1,6 +1,12 @@
 [workspace]
 resolver = "3"
-members = ["policy-fetcher", "burrego", "policy-evaluator", "kwctl"]
+members = [
+  "policy-fetcher",
+  "burrego",
+  "policy-evaluator",
+  "kwctl",
+  "policy-server",
+]
 
 [workspace.dependencies]
 anyhow = "1.0"
